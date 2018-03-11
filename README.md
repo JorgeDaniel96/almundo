@@ -14,7 +14,7 @@
 * All animations live within an object `this.animations`
 * Device properties be coming out of `Device.*`
 
-## Run React native proyect
+## Run react native proyect
 
 * Should run:
   * `yarn install`
