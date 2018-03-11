@@ -25,7 +25,9 @@ export default StyleSheet.create({
   },
   fontTitle: {
     fontWeight: "bold",
-    fontSize: 17,
+    fontSize: 17
+  },
+  textCenter: {
     paddingHorizontal: 20,
     textAlign: "center"
   },
@@ -58,8 +60,8 @@ export default StyleSheet.create({
     width: "100%",
     paddingVertical: 20
   },
-  amenitieText: {
-    marginBottom: 10
+  marginBottom: {
+    marginBottom: 5
   },
   addressTextContainer: {
     width: "100%"

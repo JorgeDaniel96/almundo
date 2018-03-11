@@ -1,6 +1,10 @@
 import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
 import { View, Text, Image, TouchableOpacity, FlatList } from "react-native";
 import App from "~/src/app/app";
+import * as actions from "~/src/redux/actions/hotels";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import styles from "./styles";
 import Search from "../search/search";
 import hotelData from "./data.json";
@@ -9,7 +13,7 @@ const hotelImage = require("~/assets/images/hotel.jpg");
 const startIcon = require("~/assets/images/iconFavorite.png");
 const favoritesHeaderIcon = require("~/assets/images/favorites.png");
 
-class Home extends PureComponent {
+class HotelLists extends PureComponent {
   static navigationOptions = {
     headerRight: (
       <TouchableOpacity
@@ -27,11 +31,16 @@ class Home extends PureComponent {
       </TouchableOpacity>
     )
   };
+
   constructor(props) {
     super(props);
-    this.state = {
-      title: "My home"
-    };
+    this.state = {};
+  }
+
+  componentDidMount() {
+    this.props.actions.create_store_structure();
+    // const hotels = this.props.hotels;
+    // console.log(hotels);
   }
 
   // eslint-disable-next-line
@@ -92,4 +101,23 @@ class Home extends PureComponent {
   }
 }
 
-export default Home;
+function mapStateToProps(state) {
+  return {
+    hotels: state.hotels.hotels
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  };
+}
+
+HotelLists.propTypes = {
+  actions: PropTypes.shape({
+    create_store_structure: PropTypes.func.isRequired
+  }).isRequired,
+  hotels: PropTypes.shape({}).isRequired
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HotelLists);

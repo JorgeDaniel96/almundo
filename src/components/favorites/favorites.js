@@ -24,7 +24,9 @@ class Favorites extends PureComponent {
           onPress={() => App.navigateTo(params)}
           style={[styles.favoriteCartContent, styles.shadow]}
         >
-          <Text style={styles.fontTitle}>{hotel.name}</Text>
+          <Text style={[styles.fontTitle, styles.textCenter]}>
+            {hotel.name}
+          </Text>
           <Image source={iconInfo} />
         </TouchableOpacity>
       </View>

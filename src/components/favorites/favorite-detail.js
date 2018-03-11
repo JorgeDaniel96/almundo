@@ -21,7 +21,7 @@ class FavoriteDetail extends PureComponent {
     const hotel = this.props.hotelDetail;
     return (
       <View style={styles.favoriteDetailContainer}>
-        <Text style={styles.fontTitle}>{hotel.name}</Text>
+        <Text style={[styles.fontTitle, styles.textCenter]}>{hotel.name}</Text>
         <View style={styles.flexRow}>{this.renderStars(hotel.stars)}</View>
         <View style={styles.hotelImageContainer}>
           <Image style={styles.hotelImage} source={hotelImage} />
@@ -34,13 +34,13 @@ class FavoriteDetail extends PureComponent {
         </View>
 
         <View style={styles.amenitiesContainer}>
-          <Text style={[styles.fontTitle, styles.amenitieText]}>Amenitie</Text>
+          <Text style={[styles.fontTitle, styles.marginBottom]}>Amenitie</Text>
           {hotel.amenities.map(amenitie => (
             <Text style={styles.amenitie}>{amenitie}</Text>
           ))}
         </View>
         <View style={styles.addressTextContainer}>
-          <Text style={styles.fontTitle}>Address</Text>
+          <Text style={[styles.fontTitle, styles.marginBottom]}>Address</Text>
           <Text> {hotel.address}</Text>
         </View>
       </View>
@@ -54,7 +54,7 @@ FavoriteDetail.propTypes = {
     stars: PropTypes.number.isRequired,
     price: PropTypes.number.isRequired,
     address: PropTypes.string.isRequired,
-    amenities: PropTypes.arrayOf(PropTypes.object).isRequired
+    amenities: PropTypes.arrayOf(PropTypes.string).isRequired
   }).isRequired
 };
 
