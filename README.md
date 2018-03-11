@@ -14,6 +14,11 @@
 * All animations live within an object `this.animations`
 * Device properties be coming out of `Device.*`
 
+## Run unit testing
+
+* Should run:
+  * `yarn test`
+
 ## Run react native proyect
 
 * Should run:

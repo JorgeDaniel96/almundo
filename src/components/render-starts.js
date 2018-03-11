@@ -9,7 +9,9 @@ const RenderStarts = {
     const arrayStart = [];
     let i = 0;
     for (i; i <= starts; i++) {
-      arrayStart.push(<Image style={styles.startIcon} source={startIcon} />);
+      arrayStart.push(
+        <Image key={i} style={styles.startIcon} source={startIcon} />
+      );
     }
     return arrayStart;
   }

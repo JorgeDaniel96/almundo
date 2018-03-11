@@ -18,7 +18,7 @@ class Favorites extends PureComponent {
       }
     };
     return (
-      <View style={styles.favoriteCardContainer}>
+      <View key={hotel.id} style={styles.favoriteCardContainer}>
         <TouchableOpacity
           onPress={() => App.navigateTo(this.params)}
           style={[styles.favoriteCartContent, styles.shadow]}

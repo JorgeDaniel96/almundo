@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoriteDetail render is correct 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "height": "90%",
+      "padding": 10,
+      "paddingTop": 0,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontSize": 17,
+          "fontWeight": "bold",
+        },
+        Object {
+          "paddingHorizontal": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Hotel Stefanos
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/images/iconFavorite.png",
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "tintColor": "#ffbc00",
+          "width": 30,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/images/iconFavorite.png",
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "tintColor": "#ffbc00",
+          "width": 30,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/images/iconFavorite.png",
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "tintColor": "#ffbc00",
+          "width": 30,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/images/iconFavorite.png",
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "tintColor": "#ffbc00",
+          "width": 30,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "height": "40%",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/images/hotel.jpg",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 3,
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#a3a3a3",
+          }
+        }
+      >
+        Price Per Night - 
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#ffbc00bd",
+              "fontWeight": "bold",
+              "textAlign": "right",
+            }
+          }
+        >
+          ARS 
+          994.18
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingVertical": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontWeight": "bold",
+          },
+          Object {
+            "marginBottom": 5,
+          },
+        ]
+      }
+    >
+      Amenitie
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={undefined}
+    >
+      safety-box
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={undefined}
+    >
+      nightclub
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={undefined}
+    >
+      deep-soaking-bathtub
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={undefined}
+    >
+      beach
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={undefined}
+    >
+      business-center
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "fontSize": 17,
+            "fontWeight": "bold",
+          },
+          Object {
+            "marginBottom": 5,
+          },
+        ]
+      }
+    >
+      Address
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+       
+      53 May Road, Mount Roskill, Auckland, 1041
+    </Text>
+  </View>
+</View>
+`;

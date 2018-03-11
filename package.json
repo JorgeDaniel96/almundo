@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "server":
       "mongod | mongoimport --db data  --collection hotels  --drop --file ./api/data.json | nodemon ./api/index.js",
-    "tw": "jest",
+    "test": "node_modules/.bin/jest",
+    "tw": "node_modules/.bin/jest --watch",
     "ios": "react-native run-ios --simulator=\"iPhone 8\"",
     "android": "react-native run-android",
     "lint": "eslint \"src/**/*.js\" && eslint  \"tests/**/*.js\""
@@ -46,6 +47,8 @@
     "react-test-renderer": "^16.3.0-alpha.1"
   },
   "jest": {
-    "preset": "react-native"
+    "verbose": true,
+    "preset": "react-native",
+    "setupFiles": ["./jest/setup.js"]
   }
 }

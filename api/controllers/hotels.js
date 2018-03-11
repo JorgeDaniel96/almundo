@@ -20,6 +20,7 @@ function getHotelById(req, res) {
 
 function getHotels(req, res) {
   Hotel.find({}, (err, hotels) => {
+    console.log(hotels);
     if (err) {
       return res.status(500).send({
         message: `Error making the request${err}`

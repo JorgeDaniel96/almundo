@@ -26,7 +26,9 @@ class FavoriteDetail extends PureComponent {
         <View style={styles.amenitiesContainer}>
           <Text style={[styles.fontTitle, styles.marginBottom]}>Amenitie</Text>
           {hotel.amenities.map(amenitie => (
-            <Text style={styles.amenitie}>{amenitie}</Text>
+            <Text key={amenitie.toString()} style={styles.amenitie}>
+              {amenitie}
+            </Text>
           ))}
         </View>
         <View style={styles.addressTextContainer}>
