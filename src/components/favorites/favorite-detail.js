@@ -2,27 +2,17 @@ import React, { PureComponent } from "react";
 import { View, Text, Image } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
+import RenderStarts from "../render-starts";
 
 const hotelImage = require("~/assets/images/hotel.jpg");
-const startIcon = require("~/assets/images/iconFavorite.png");
 
 class FavoriteDetail extends PureComponent {
-  // eslint-disable-next-line
-  renderStars(starts) {
-    const arrayStart = [];
-    let i = 0;
-    for (i; i <= starts; i++) {
-      arrayStart.push(<Image style={styles.startIcon} source={startIcon} />);
-    }
-    return arrayStart;
-  }
-
   render() {
     const hotel = this.props.hotelDetail;
     return (
       <View style={styles.favoriteDetailContainer}>
         <Text style={[styles.fontTitle, styles.textCenter]}>{hotel.name}</Text>
-        <View style={styles.flexRow}>{this.renderStars(hotel.stars)}</View>
+        <View style={styles.flexRow}>{RenderStarts.render(hotel.stars)}</View>
         <View style={styles.hotelImageContainer}>
           <Image style={styles.hotelImage} source={hotelImage} />
           <View style={styles.priceContainer}>

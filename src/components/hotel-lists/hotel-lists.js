@@ -8,9 +8,9 @@ import { bindActionCreators } from "redux";
 import styles from "./styles";
 import Search from "../search/search";
 import hotelData from "./data.json";
+import RenderStarts from "../render-starts";
 
 const hotelImage = require("~/assets/images/hotel.jpg");
-const startIcon = require("~/assets/images/iconFavorite.png");
 const favoritesHeaderIcon = require("~/assets/images/favorites.png");
 
 class HotelLists extends PureComponent {
@@ -39,21 +39,12 @@ class HotelLists extends PureComponent {
 
   componentDidMount() {
     this.props.actions.create_store_structure();
-    // const hotels = this.props.hotels;
-    // console.log(hotels);
-  }
-
-  // eslint-disable-next-line
-  renderStars(starts) {
-    const arrayStart = [];
-    let i = 0;
-    for (i; i <= starts; i++) {
-      arrayStart.push(<Image style={styles.startIcon} source={startIcon} />);
-    }
-    return arrayStart;
+    const hotels = this.props.hotels;
+    console.log(hotels);
   }
 
   renderItem(item) {
+    this.item = item;
     const params = {
       routeName: "HotelDetail",
       props: item
@@ -73,7 +64,7 @@ class HotelLists extends PureComponent {
                 {item.name}
               </Text>
               <View style={[styles.flexRow, styles.startsContainer]}>
-                {this.renderStars(item.stars)}
+                {RenderStarts.render(item.stars)}
               </View>
             </View>
             <View style={styles.rightFooterCart}>

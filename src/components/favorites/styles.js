@@ -50,12 +50,6 @@ export default StyleSheet.create({
   flexRow: {
     flexDirection: "row"
   },
-  startIcon: {
-    tintColor: "#ffbc00",
-    height: 30,
-    width: 30,
-    marginBottom: 5
-  },
   amenitiesContainer: {
     width: "100%",
     paddingVertical: 20
