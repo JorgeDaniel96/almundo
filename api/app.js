@@ -9,7 +9,7 @@ app.use("/api", api);
 
 app.get("/hotels", (req, res) => {
   res.send({
-    message: `Hola ${req.params.name}!`
+    message: `Params ${req.params}!`
   });
 });
 

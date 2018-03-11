@@ -49,17 +49,18 @@ class HotelLists extends PureComponent {
       routeName: "HotelDetail",
       props: item
     };
+
     return (
       <View style={styles.cardContainer}>
         <TouchableOpacity
           onPress={() => App.navigateTo(params)}
-          style={[styles.cartContent, styles.shadow]}
+          style={[styles.cardContent, styles.shadow]}
         >
           <View style={styles.imageContainer}>
             <Image style={styles.hotelImage} source={hotelImage} />
           </View>
-          <View style={styles.footerCart}>
-            <View style={styles.leftFooterCart}>
+          <View style={styles.footerCard}>
+            <View style={styles.leftFooterCard}>
               <Text numberOfLines={1} style={styles.hotelName}>
                 {item.name}
               </Text>
@@ -67,7 +68,7 @@ class HotelLists extends PureComponent {
                 {RenderStarts.render(item.stars)}
               </View>
             </View>
-            <View style={styles.rightFooterCart}>
+            <View style={styles.rightFooterCard}>
               <Text style={styles.pricePerNightText}>Price Per Night</Text>
               <View style={styles.flexRow}>
                 <Text style={styles.priceText}>ARS {item.price}</Text>

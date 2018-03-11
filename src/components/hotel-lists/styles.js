@@ -7,7 +7,7 @@ export default StyleSheet.create({
     marginBottom: 15,
     paddingHorizontal: 10
   },
-  cartContent: {
+  cardContent: {
     height: 270,
     width: "100%",
     backgroundColor: "white",
@@ -31,7 +31,7 @@ export default StyleSheet.create({
   flexRow: {
     flexDirection: "row"
   },
-  footerCart: {
+  footerCard: {
     height: "25%",
     width: "100%",
     flexDirection: "row",
@@ -39,12 +39,12 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center"
   },
-  leftFooterCart: {
+  leftFooterCard: {
     justifyContent: "center",
     width: "60%",
     height: "100%"
   },
-  rightFooterCart: {
+  rightFooterCard: {
     alignItems: "center",
     justifyContent: "space-around",
     height: "100%",
