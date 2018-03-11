@@ -7,10 +7,10 @@ const api = require("./routes");
 app.use(bodyParser.json());
 app.use("/api", api);
 
-// app.get("/hotels/:id", (req, res) => {
-//   res.send({
-//     message: `Hola ${req.params.name}!`
-//   });
-// });
+app.get("/hotels", (req, res) => {
+  res.send({
+    message: `Hola ${req.params.name}!`
+  });
+});
 
 module.exports = app;

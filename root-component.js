@@ -6,6 +6,8 @@ import MainNavigator from "~/src/app/main-navigator";
 import App from "~/src/app/app";
 import reducers from "./src/redux/reducers/index";
 
+console.disableYellowBox = true;
+
 const store = createStore(reducers, applyMiddleware(thunk));
 App.redux(store);
 

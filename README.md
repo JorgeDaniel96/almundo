@@ -1,4 +1,4 @@
-# Prueba con react native
+# Test comparamejor with react native
 
 ## Folders
 

@@ -10,9 +10,8 @@ const imgEmpty = require("~/assets/images/imgEmpty.png");
 const iconInfo = require("~/assets/images/iconInfo.png");
 
 class Favorites extends PureComponent {
-  // eslint-disable-next-line
   renderFavoriteCard(hotel) {
-    const params = {
+    this.params = {
       routeName: "Modal",
       props: {
         children: <FavoriteDetail hotelDetail={hotel} />
@@ -21,7 +20,7 @@ class Favorites extends PureComponent {
     return (
       <View style={styles.favoriteCardContainer}>
         <TouchableOpacity
-          onPress={() => App.navigateTo(params)}
+          onPress={() => App.navigateTo(this.params)}
           style={[styles.favoriteCartContent, styles.shadow]}
         >
           <Text style={[styles.fontTitle, styles.textCenter]}>
