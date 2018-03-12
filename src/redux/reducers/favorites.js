@@ -8,11 +8,11 @@ const actionMap = {};
 
 function addToFavorites(prevHotel, payload) {
   const newHotels = Object.assign({}, prevHotel);
-  if (prevHotel[payload.id]) {
+  if (prevHotel[payload._id]) {
     return prevHotel;
   }
-  newHotels[payload.id] = {
-    id: payload.id,
+  newHotels[payload._id] = {
+    id: payload._id,
     name: payload.name,
     stars: payload.stars,
     image: payload.image,

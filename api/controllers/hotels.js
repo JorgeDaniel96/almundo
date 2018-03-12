@@ -20,7 +20,6 @@ function getHotelById(req, res) {
 
 function getHotels(req, res) {
   Hotel.find({}, (err, hotels) => {
-    console.log(hotels);
     if (err) {
       return res.status(500).send({
         message: `Error making the request${err}`
@@ -37,7 +36,23 @@ function getHotels(req, res) {
   });
 }
 
+function saveInitialData(data) {
+  Hotel.remove({}, err => {
+    if (err) return console.log(err);
+    console.log("Clean Data!!!");
+  });
+
+  data.map(hotel => {
+    const hotelToSave = new Hotel(hotel);
+    return hotelToSave.save(err => {
+      if (err) return console.log(err);
+      console.log("Data Saved");
+    });
+  });
+}
+
 module.exports = {
   getHotelById,
-  getHotels
+  getHotels,
+  saveInitialData
 };

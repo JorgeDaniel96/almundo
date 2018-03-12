@@ -1,14 +1,13 @@
 import axios from "axios";
 import { createAction } from "redux-actions";
 
-export const fetch_hotels = createAction("FETCH_HOTELS");
+export const receive_hotels = createAction("RECEIVE_HOTELS");
 
-export const get_store_hotels = () => dispatch => {
+export const get_hotels = () => dispatch => {
   axios
-    .get("http://localhost:3030/hotels")
-    .then(response => dispatch(fetch_hotels(response.data.hotels)))
+    .get("http://localhost:3030/almundo/hotel")
+    .then(response => dispatch(receive_hotels(response.data.hotels)))
     .catch(error => console.log(error));
 };
 
-export const create_store_structure = () => dispatch =>
-  dispatch(get_store_hotels());
+export const create_store_structure = () => dispatch => dispatch(get_hotels());

@@ -1,16 +1,21 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import { View, Text, Image, TouchableOpacity, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  FlatList,
+  ActivityIndicator
+} from "react-native";
 import App from "~/src/app/app";
-import * as actions from "~/src/redux/actions/hotels";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import HotelListsItem from "./hotel-lists-item";
 import styles from "./styles";
 import Search from "../search/search";
-import hotelData from "./data.json";
-import RenderStarts from "../render-starts";
+import renderStarts from "../render-starts";
 
-const hotelImage = require("~/assets/images/hotel.jpg");
 const favoritesHeaderIcon = require("~/assets/images/favorites.png");
 
 class HotelLists extends PureComponent {
@@ -34,61 +39,59 @@ class HotelLists extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {
-    this.props.actions.create_store_structure();
-    const hotels = this.props.hotels;
-    console.log(hotels);
-  }
-
-  renderItem(item) {
-    this.item = item;
-    const params = {
-      routeName: "HotelDetail",
-      props: item
+    this.state = {
+      hotelSearched: "",
+      newHotelList: ""
     };
+    this.setList = this.setList.bind(this);
+    this.searchByName = this.searchByName.bind(this);
+  }
 
-    return (
-      <View style={styles.cardContainer}>
-        <TouchableOpacity
-          onPress={() => App.navigateTo(params)}
-          style={[styles.cardContent, styles.shadow]}
-        >
-          <View style={styles.imageContainer}>
-            <Image style={styles.hotelImage} source={hotelImage} />
-          </View>
-          <View style={styles.footerCard}>
-            <View style={styles.leftFooterCard}>
-              <Text numberOfLines={1} style={styles.hotelName}>
-                {item.name}
-              </Text>
-              <View style={[styles.flexRow, styles.startsContainer]}>
-                {RenderStarts.render(item.stars)}
-              </View>
-            </View>
-            <View style={styles.rightFooterCard}>
-              <Text style={styles.pricePerNightText}>Price Per Night</Text>
-              <View style={styles.flexRow}>
-                <Text style={styles.priceText}>ARS {item.price}</Text>
-              </View>
-            </View>
-          </View>
-        </TouchableOpacity>
-      </View>
+  setList(stringFilter) {
+    this.setState(
+      {
+        hotelSearched: stringFilter
+      },
+      () => {
+        const result = this.props.hotels.filter(this.searchByName);
+        this.setState({
+          newHotelList: result
+        });
+      }
     );
   }
 
+  searchByName(hotel) {
+    return hotel.name
+      .toLowerCase()
+      .includes(this.state.hotelSearched.toLowerCase());
+  }
+
   render() {
+    const dataIsReady = this.props.hotels.length >= 1;
+    console.log("dataIsReady: ", dataIsReady);
     return (
-      <FlatList
-        ListHeaderComponent={<Search />}
-        stickyHeaderIndices={[0]}
-        data={hotelData}
-        keyExtractor={item => item.id}
-        renderItem={({ item }) => this.renderItem(item)}
-      />
+      <View>
+        {dataIsReady ? (
+          <FlatList
+            ListHeaderComponent={<Search filterHotelLists={this.setList} />}
+            stickyHeaderIndices={[0]}
+            data={
+              this.state.newHotelList.length === 0
+                ? this.props.hotels
+                : this.state.newHotelList
+            }
+            keyExtractor={item => item._id}
+            renderItem={({ item }) => (
+              <HotelListsItem key={item.__id} item={item} />
+            )}
+          />
+        ) : (
+          <View style={styles.loaderContainer}>
+            <ActivityIndicator size="large" color="#ffbc00bd" />
+          </View>
+        )}
+      </View>
     );
   }
 }
@@ -99,17 +102,9 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
-}
-
 HotelLists.propTypes = {
-  actions: PropTypes.shape({
-    create_store_structure: PropTypes.func.isRequired
-  }).isRequired,
-  hotels: PropTypes.shape({}).isRequired
+  hotels: PropTypes.PropTypes.oneOfType([PropTypes.object, PropTypes.array])
+    .isRequired
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HotelLists);
+export default connect(mapStateToProps)(HotelLists);

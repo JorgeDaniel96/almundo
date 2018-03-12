@@ -6,11 +6,12 @@ const initialState = {
 
 const actionMap = {};
 
-actionMap.FETCH_HOTELS = (state, action) => {
+actionMap.RECEIVE_HOTELS = (state, action) => {
   const newState = {
     ...state,
     hotels: action.payload
   };
+
   return newState;
 };
 

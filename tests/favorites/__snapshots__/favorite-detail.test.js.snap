@@ -80,20 +80,6 @@ exports[`FavoriteDetail render is correct 1`] = `
         }
       }
     />
-    <Image
-      source={
-        Object {
-          "testUri": "../../../assets/images/iconFavorite.png",
-        }
-      }
-      style={
-        Object {
-          "height": 30,
-          "tintColor": "#ffbc00",
-          "width": 30,
-        }
-      }
-    />
   </View>
   <View
     style={
@@ -106,7 +92,7 @@ exports[`FavoriteDetail render is correct 1`] = `
     <Image
       source={
         Object {
-          "testUri": "../../../assets/images/hotel.jpg",
+          "uri": undefined,
         }
       }
       style={

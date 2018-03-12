@@ -1,11 +1,10 @@
 {
   "hotels": [
     {
-      "id": "249942",
       "name": "Hotel Stefanos",
       "stars": 3,
       "price": 994.18,
-      "image": "4900059_30_b.jpg",
+      "image": "https://image.ibb.co/mLV5oS/5405282_15_b.jpg",
       "amenities": [
         "safety-box",
         "nightclub",
@@ -19,11 +18,10 @@
       "hour": "11:00"
     },
     {
-      "id": "161901",
       "name": "Hotel Santa Cruz",
       "stars": 3,
       "price": 1267.57,
-      "image": "6623490_6_b.jpg",
+      "image": "https://image.ibb.co/hC3fNn/1574025_73_b.jpg",
       "amenities": [
         "nightclub",
         "business-center",
@@ -37,11 +35,10 @@
       "hour": "5:00"
     },
     {
-      "id": "161914",
       "name": "NM Lima Hotel",
       "stars": 4,
       "price": 1445.5,
-      "image": "981018_26_b.jpg",
+      "image": "https://image.ibb.co/hQ55oS/981018_26_b.jpg",
       "amenities": [
         "business-center",
         "nightclub",
@@ -55,11 +52,10 @@
       "hour": "4:00"
     },
     {
-      "id": "208599",
       "name": "El Golf Hotel Boutique",
       "stars": 4,
       "price": 1513.45,
-      "image": "1191401_110_b.jpg",
+      "image": "https://image.ibb.co/cUnJ8S/530284_167_b.jpg",
       "amenities": [
         "safety-box",
         "bathrobes",
@@ -73,11 +69,10 @@
       "hour": "11:00"
     },
     {
-      "id": "236309",
       "name": "Casa Andina Select Miraflores",
       "stars": 4,
       "price": 1545.46,
-      "image": "2a5bb415_b.jpg",
+      "image": "https://image.ibb.co/coubv7/164283a_hb_a_001.jpg",
       "amenities": [
         "coffe-maker",
         "safety-box",
@@ -91,11 +86,10 @@
       "hour": "3:00"
     },
     {
-      "id": "161899",
       "name": "Radisson Hotel Decapolis Miraflores",
       "stars": 4,
       "price": 2314.61,
-      "image": "46512_29_b.jpg",
+      "image": "https://image.ibb.co/g1zn2n/23645_15_b.jpg",
       "amenities": [
         "bathtub",
         "separate-bredroom",
@@ -109,11 +103,10 @@
       "hour": "4:00"
     },
     {
-      "id": "104074",
       "name": "Antigua Miraflores Hotel",
       "stars": 3,
       "price": 1862.16,
-      "image": "480835_73_b.jpg",
+      "image": "https://image.ibb.co/dtdrTS/2a5bb415_b.jpg",
       "amenities": [
         "restaurant",
         "separate-bredroom",
@@ -127,11 +120,10 @@
       "hour": "10:00 am"
     },
     {
-      "id": "512559",
       "name": "Casa Falleri Boutique Hotel",
       "stars": 3,
       "price": 1634.03,
-      "image": "11908954_150_b.jpg",
+      "image": "https://image.ibb.co/m0f5oS/9291429_9_b.jpg",
       "amenities": [
         "nightclub",
         "garden",
@@ -143,6 +135,176 @@
       "longitude": 170.727935,
       "address": "2 College Hill, Freemans Bay, Auckland, 1011",
       "hour": "9:00"
+    },
+    {
+      "name": "Delfines Hotel & Convention Center",
+      "stars": 4,
+      "price": 3841.81,
+      "image": "https://image.ibb.co/carBTS/6623490_6_b.jpg",
+      "latitude": -16.2531253896762,
+      "longitude": 28.47492552989593,
+      "address": "Calle Doctor Jose 38",
+      "hour": "10:00",
+      "amenities": [
+        "separate-bredroom",
+        "business-center",
+        "safety-box",
+        "children-club",
+        "bathrobes"
+      ]
+    },
+    {
+      "name": "Belmond Miraflores Park",
+      "stars": 5,
+      "price": 9355.52,
+      "image": "https://image.ibb.co/j1qS2n/4900059_30_b.jpg",
+      "latitude": -16.248944202885006,
+      "longitude": 28.466669256084423,
+      "address": "CALLE CRUZ VERDE 24",
+      "hour": "11:00",
+      "amenities": [
+        "coffe-maker",
+        "separate-bredroom",
+        "garden",
+        "children-club",
+        "deep-soaking-bathtub"
+      ]
+    },
+    {
+      "name": "Atelier Hotel",
+      "stars": 3,
+      "price": 1512.97,
+      "image": "https://image.ibb.co/gGULNn/1191401_110_b.jpg",
+      "latitude": -16.250930695879674,
+      "longitude": 28.46867485085343,
+      "address": "Calle Saenz 33",
+      "hour": "12:00",
+      "amenities": [
+        "newspaper",
+        "business-center",
+        "children-club",
+        "beach",
+        "coffe-maker"
+      ]
+    },
+    {
+      "name": "Jose Antonio Lima",
+      "stars": 4,
+      "price": 1914.87,
+      "image": "https://image.ibb.co/mOjLNn/893882_7_b.jpg",
+      "latitude": -16.253459871752394,
+      "longitude": 28.463929978110915,
+      "address": "Calle Padre 8",
+      "hour": "13:00",
+      "amenities": [
+        "garden",
+        "business-center",
+        "bathrobes",
+        "safety-box",
+        "beach-pool-facilities"
+      ]
+    },
+    {
+      "name": "El Condado Miraflores Hotel & Suites",
+      "stars": 3,
+      "price": 1374.56,
+      "image": "https://image.ibb.co/mLQS2n/480835_73_b.jpg",
+      "latitude": -16.24966116359427,
+      "longitude": 28.467069848685913,
+      "address": "Calle Castillo 10",
+      "hour": "14:00",
+      "amenities": [
+        "coffe-maker",
+        "restaurant",
+        "bathtub",
+        "beach-pool-facilities",
+        "separate-bredroom"
+      ]
+    },
+    {
+      "name": "Suites del Bosque Hotel",
+      "stars": 3,
+      "price": 1647.73,
+      "image": "https://image.ibb.co/meXkoS/46512_29_b.jpg",
+      "latitude": -16.249780219298366,
+      "longitude": 28.46708373892735,
+      "address": "Calle Castillo 12",
+      "hour": "15:00",
+      "amenities": [
+        "beach-pool-facilities",
+        "newspaper",
+        "separate-bredroom",
+        "safety-box",
+        "garden"
+      ]
+    },
+    {
+      "name": "Leon de Oro Inn & Suites",
+      "stars": 3,
+      "price": 1128,
+      "image": "https://image.ibb.co/dYkGv7/44e00399_b.jpg",
+      "latitude": -16.248756890232638,
+      "longitude": 28.467215115206194,
+      "address": "Plaza Candelaria 9",
+      "hour": "16:00",
+      "amenities": [
+        "nightclub",
+        "business-center",
+        "safety-box",
+        "deep-soaking-bathtub",
+        "garden"
+      ]
+    },
+    {
+      "name": "Sonesta Posadas del Inca Miraflores - Lima",
+      "stars": 3,
+      "price": 1485.63,
+      "image": "https://image.ibb.co/gdz9F7/11908954_150_b.jpg",
+      "latitude": -16.249720835134152,
+      "longitude": 28.47000855261746,
+      "address": "Santa Rosa De Lima, 1011",
+      "hour": "17:00",
+      "amenities": [
+        "garden",
+        "restaurant",
+        "beach",
+        "deep-soaking-bathtub",
+        "bathtub"
+      ]
+    },
+    {
+      "name": "B&B Tradiciones",
+      "stars": 3,
+      "price": 801.45,
+      "image": "https://image.ibb.co/jnorTS/4d72efed_b.jpg",
+      "latitude": -16.257125678192963,
+      "longitude": 28.47127655355969,
+      "address": "Calle Viera Clavijo 49",
+      "hour": "18:00",
+      "amenities": [
+        "newspaper",
+        "coffe-maker",
+        "safety-box",
+        "beach-pool-facilities",
+        "nightclub"
+      ]
+    },
+    {
+      "name": "Hotel Continental",
+      "stars": 2,
+      "price": 774.53,
+      "image": "https://image.ibb.co/eJfia7/6975518_43_b.jpg",
+      "latitude": -16.25281750941725,
+      "longitude": 28.47398463886871,
+      "address": "Rambla De Santa Cruz, 116",
+      "hour": "20:00",
+      "amenities": [
+        "deep-soaking-bathtub",
+        "coffe-maker",
+        "newspaper",
+        "beach",
+        "children-club"
+      ]
     }
   ]
 }

@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 import styles from "./styles";
 import RenderStarts from "../render-starts";
 
-const hotelImage = require("~/assets/images/hotel.jpg");
-
 class FavoriteDetail extends PureComponent {
   render() {
     const hotel = this.props.hotelDetail;
@@ -14,7 +12,7 @@ class FavoriteDetail extends PureComponent {
         <Text style={[styles.fontTitle, styles.textCenter]}>{hotel.name}</Text>
         <View style={styles.flexRow}>{RenderStarts.render(hotel.stars)}</View>
         <View style={styles.hotelImageContainer}>
-          <Image style={styles.hotelImage} source={hotelImage} />
+          <Image style={styles.hotelImage} source={{ uri: hotel.image }} />
           <View style={styles.priceContainer}>
             <Text style={styles.pricePerNightText}>Price Per Night - </Text>
             <View style={styles.flexRow}>

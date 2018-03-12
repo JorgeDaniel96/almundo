@@ -4,6 +4,6 @@ import renderer from "react-test-renderer";
 import Search from "~/src/components/search/search";
 
 it("Search render is correct", () => {
-  const tree = renderer.create(<Search />);
+  const tree = renderer.create(<Search filterHotelLists={() => {}} />);
   expect(tree).toMatchSnapshot();
 });

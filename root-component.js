@@ -10,6 +10,7 @@ console.disableYellowBox = true;
 
 const store = createStore(reducers, applyMiddleware(thunk));
 App.redux(store);
+App.downloadDB();
 
 const RootComponent = () => (
   <Provider store={store}>

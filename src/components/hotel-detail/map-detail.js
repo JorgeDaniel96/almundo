@@ -22,17 +22,8 @@ class MapDetail extends Component {
   }
 
   addToFavorites(hotelInfo) {
-    const hotelToSave = {
-      id: hotelInfo.id,
-      name: hotelInfo.name,
-      stars: hotelInfo.stars,
-      image: hotelInfo.image,
-      price: hotelInfo.price,
-      address: hotelInfo.address,
-      amenities: hotelInfo.amenities
-    };
     this.animations.hideHotelInformation.start(() => {
-      this.props.actions.add_hotel_to_favorites(hotelToSave);
+      this.props.actions.add_hotel_to_favorites(hotelInfo._id);
     });
   }
 
@@ -57,7 +48,7 @@ class MapDetail extends Component {
         </Animated.View>
         <Animated.View
           style={[
-            styles.storeDetail,
+            styles.hotelDetail,
             styles.shadow,
             { top: this.state.detail }
           ]}
@@ -95,7 +86,7 @@ MapDetail.propTypes = {
     address: PropTypes.string.isRequired,
     hour: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired
+    _id: PropTypes.string.isRequired
   }).isRequired
 };
 

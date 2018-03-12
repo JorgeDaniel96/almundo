@@ -34,7 +34,7 @@ class HotelDetail extends PureComponent {
                 longitude: this.props.longitude
               }}
               image={hotelIcon}
-              key={this.props.id}
+              key={this.props._id}
               title={this.props.name}
             />
           </MapView>
@@ -46,7 +46,7 @@ class HotelDetail extends PureComponent {
 }
 
 HotelDetail.propTypes = {
-  id: PropTypes.string.isRequired,
+  _id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   latitude: PropTypes.number.isRequired,
   longitude: PropTypes.number.isRequired

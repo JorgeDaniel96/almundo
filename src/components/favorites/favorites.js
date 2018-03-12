@@ -10,22 +10,23 @@ const imgEmpty = require("~/assets/images/imgEmpty.png");
 const iconInfo = require("~/assets/images/iconInfo.png");
 
 class Favorites extends PureComponent {
-  renderFavoriteCard(hotel) {
-    this.params = {
+  showDetailInModal(hotel) {
+    App.navigateTo({
       routeName: "Modal",
       props: {
         children: <FavoriteDetail hotelDetail={hotel} />
       }
-    };
+    });
+  }
+
+  renderFavoriteCard(hotel) {
     return (
       <View key={hotel.id} style={styles.favoriteCardContainer}>
         <TouchableOpacity
-          onPress={() => App.navigateTo(this.params)}
+          onPress={() => this.showDetailInModal(hotel)}
           style={[styles.favoriteCartContent, styles.shadow]}
         >
-          <Text style={[styles.fontTitle, styles.textCenter]}>
-            {hotel.name}
-          </Text>
+          <Text style={styles.fontTitle}>{hotel.name}</Text>
           <Image source={iconInfo} />
         </TouchableOpacity>
       </View>

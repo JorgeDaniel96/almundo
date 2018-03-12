@@ -11,6 +11,7 @@ module.exports = {
       "error",
       { allowShortCircuit: true, allowTernary: true }
     ],
+    "no-underscore-dangle": false,
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "consistent-return": "off"
   }

@@ -56,7 +56,7 @@ export default StyleSheet.create({
     paddingLeft: 25,
     borderRadius: 20
   },
-  storeDetail: {
+  hotelDetail: {
     backgroundColor: "white",
     borderRadius: 10,
     position: "absolute",

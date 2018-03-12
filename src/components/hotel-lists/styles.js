@@ -76,6 +76,13 @@ export default StyleSheet.create({
     width: 26,
     height: 35
   },
+  loaderContainer: {
+    height: Device.height,
+    paddingBottom: "20%",
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center"
+  },
   shadow: {
     shadowColor: "0 14px 28px rgba(0,0,0,0.30)",
     shadowOpacity: 0.25,
