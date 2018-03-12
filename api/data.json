@@ -14,8 +14,7 @@
       ],
       "latitude": 4.676273,
       "longitude": -74.056917,
-      "address": "53 May Road, Mount Roskill, Auckland, 1041",
-      "hour": "11:00"
+      "address": "53 May Road, Mount Roskill, Auckland, 1041"
     },
     {
       "name": "Hotel Santa Cruz",
@@ -31,8 +30,7 @@
       ],
       "latitude": 37.42,
       "longitude": -122.084,
-      "address": "7 Fenshawe St, CBD, Auckland",
-      "hour": "5:00"
+      "address": "7 Fenshawe St, CBD, Auckland"
     },
     {
       "name": "NM Lima Hotel",
@@ -48,8 +46,7 @@
       ],
       "latitude": 37.418,
       "longitude": -122.089,
-      "address": "39-51 Rora Street, Te Kuiti, 3910",
-      "hour": "4:00"
+      "address": "39-51 Rora Street, Te Kuiti, 3910"
     },
     {
       "name": "El Golf Hotel Boutique",
@@ -65,8 +62,7 @@
       ],
       "latitude": 36.845246,
       "longitude": -122.760389,
-      "address": "53 May Road, Mount Roskill, Auckland, 1041",
-      "hour": "11:00"
+      "address": "53 May Road, Mount Roskill, Auckland, 1041"
     },
     {
       "name": "Casa Andina Select Miraflores",
@@ -82,8 +78,7 @@
       ],
       "latitude": 45.908622,
       "longitude": -110.734362,
-      "address": "7 Fenshawe St, CBD, Auckland",
-      "hour": "3:00"
+      "address": "7 Fenshawe St, CBD, Auckland"
     },
     {
       "name": "Radisson Hotel Decapolis Miraflores",
@@ -99,8 +94,7 @@
       ],
       "latitude": -20.623065,
       "longitude": 175.282791,
-      "address": "39-51 Rora Street, Te Kuiti, 3910",
-      "hour": "4:00"
+      "address": "39-51 Rora Street, Te Kuiti, 3910"
     },
     {
       "name": "Antigua Miraflores Hotel",
@@ -116,8 +110,7 @@
       ],
       "latitude": -31.315834,
       "longitude": 172.814633,
-      "address": "10 Clonbern Road, Remuera, Auckland, 1050",
-      "hour": "10:00 am"
+      "address": "10 Clonbern Road, Remuera, Auckland, 1050"
     },
     {
       "name": "Casa Falleri Boutique Hotel",
@@ -133,8 +126,7 @@
       ],
       "latitude": -38.24998,
       "longitude": 170.727935,
-      "address": "2 College Hill, Freemans Bay, Auckland, 1011",
-      "hour": "9:00"
+      "address": "2 College Hill, Freemans Bay, Auckland, 1011"
     },
     {
       "name": "Delfines Hotel & Convention Center",
@@ -144,7 +136,6 @@
       "latitude": -16.2531253896762,
       "longitude": 28.47492552989593,
       "address": "Calle Doctor Jose 38",
-      "hour": "10:00",
       "amenities": [
         "separate-bredroom",
         "business-center",
@@ -161,7 +152,6 @@
       "latitude": -16.248944202885006,
       "longitude": 28.466669256084423,
       "address": "CALLE CRUZ VERDE 24",
-      "hour": "11:00",
       "amenities": [
         "coffe-maker",
         "separate-bredroom",
@@ -178,7 +168,6 @@
       "latitude": -16.250930695879674,
       "longitude": 28.46867485085343,
       "address": "Calle Saenz 33",
-      "hour": "12:00",
       "amenities": [
         "newspaper",
         "business-center",
@@ -195,7 +184,6 @@
       "latitude": -16.253459871752394,
       "longitude": 28.463929978110915,
       "address": "Calle Padre 8",
-      "hour": "13:00",
       "amenities": [
         "garden",
         "business-center",
@@ -212,7 +200,6 @@
       "latitude": -16.24966116359427,
       "longitude": 28.467069848685913,
       "address": "Calle Castillo 10",
-      "hour": "14:00",
       "amenities": [
         "coffe-maker",
         "restaurant",
@@ -229,7 +216,6 @@
       "latitude": -16.249780219298366,
       "longitude": 28.46708373892735,
       "address": "Calle Castillo 12",
-      "hour": "15:00",
       "amenities": [
         "beach-pool-facilities",
         "newspaper",
@@ -246,7 +232,6 @@
       "latitude": -16.248756890232638,
       "longitude": 28.467215115206194,
       "address": "Plaza Candelaria 9",
-      "hour": "16:00",
       "amenities": [
         "nightclub",
         "business-center",
@@ -263,7 +248,6 @@
       "latitude": -16.249720835134152,
       "longitude": 28.47000855261746,
       "address": "Santa Rosa De Lima, 1011",
-      "hour": "17:00",
       "amenities": [
         "garden",
         "restaurant",
@@ -280,7 +264,6 @@
       "latitude": -16.257125678192963,
       "longitude": 28.47127655355969,
       "address": "Calle Viera Clavijo 49",
-      "hour": "18:00",
       "amenities": [
         "newspaper",
         "coffe-maker",
@@ -297,7 +280,6 @@
       "latitude": -16.25281750941725,
       "longitude": 28.47398463886871,
       "address": "Rambla De Santa Cruz, 116",
-      "hour": "20:00",
       "amenities": [
         "deep-soaking-bathtub",
         "coffe-maker",

@@ -2,7 +2,6 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import {
   View,
-  Text,
   Image,
   TouchableOpacity,
   FlatList,
@@ -10,11 +9,9 @@ import {
 } from "react-native";
 import App from "~/src/app/app";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import HotelListsItem from "./hotel-lists-item";
 import styles from "./styles";
 import Search from "../search/search";
-import renderStarts from "../render-starts";
 
 const favoritesHeaderIcon = require("~/assets/images/favorites.png");
 

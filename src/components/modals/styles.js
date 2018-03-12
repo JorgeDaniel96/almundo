@@ -14,13 +14,13 @@ export default StyleSheet.create({
     width: Device.width
   },
   childrenContainer: {
-    marginTop: 30,
-    width: "100%"
+    height: "100%",
+    width: "100%",
+    justifyContent: "space-around"
   },
   insideContainer: {
     backgroundColor: "white",
     borderRadius: 5,
-    justifyContent: "space-between",
     alignItems: "center",
     height: "70%",
     width: "80%",
@@ -29,19 +29,16 @@ export default StyleSheet.create({
   iconContainer: {
     position: "absolute",
     left: 15,
-    top: 5,
-    zIndex: 10,
-    padding: 16
-  },
-  containerIcons: {
-    justifyContent: "center",
-    alignItems: "center",
+    top: 15,
     width: 30,
     height: 30,
-    position: "absolute",
-    top: 17
+    zIndex: 10,
+    elevation: 10,
+    justifyContent: "center",
+    alignItems: "center"
   },
   icons: {
-    width: "100%"
+    width: "100%",
+    zIndex: 10
   }
 });

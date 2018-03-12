@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, ScrollView } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 import RenderStarts from "../render-starts";
@@ -21,18 +21,25 @@ class FavoriteDetail extends PureComponent {
           </View>
         </View>
 
-        <View style={styles.amenitiesContainer}>
-          <Text style={[styles.fontTitle, styles.marginBottom]}>Amenitie</Text>
-          {hotel.amenities.map(amenitie => (
-            <Text key={amenitie.toString()} style={styles.amenitie}>
-              {amenitie}
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          style={styles.scrollDescription}
+        >
+          <View style={styles.amenitiesContainer}>
+            <Text style={[styles.fontTitle, styles.marginBottom]}>
+              Amenitie
             </Text>
-          ))}
-        </View>
-        <View style={styles.addressTextContainer}>
-          <Text style={[styles.fontTitle, styles.marginBottom]}>Address</Text>
-          <Text> {hotel.address}</Text>
-        </View>
+            {hotel.amenities.map(amenitie => (
+              <Text key={amenitie.toString()} style={styles.amenitie}>
+                {amenitie}
+              </Text>
+            ))}
+          </View>
+          <View style={styles.addressTextContainer}>
+            <Text style={[styles.fontTitle, styles.marginBottom]}>Address</Text>
+            <Text> {hotel.address}</Text>
+          </View>
+        </ScrollView>
       </View>
     );
   }

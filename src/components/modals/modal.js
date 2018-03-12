@@ -11,15 +11,13 @@ class Modal extends PureComponent {
     return (
       <View style={[styles.show, styles.container]}>
         <View style={styles.insideContainer}>
-          <View style={styles.iconContainer}>
-            <TouchableOpacity
-              style={styles.containerIcons}
-              onPress={() => App.goBack()}
-            >
-              <Image style={styles.icons} source={iconClose} />
-            </TouchableOpacity>
-          </View>
           <View style={styles.childrenContainer}>{this.props.children}</View>
+          <TouchableOpacity
+            style={styles.iconContainer}
+            onPress={() => App.goBack()}
+          >
+            <Image style={styles.icons} source={iconClose} />
+          </TouchableOpacity>
         </View>
       </View>
     );

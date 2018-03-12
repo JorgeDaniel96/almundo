@@ -88,12 +88,5 @@ export default StyleSheet.create({
     color: "rgba(0, 0, 0, 0.36)",
     lineHeight: 20,
     width: "70%"
-  },
-  hourItem: {
-    width: "60%",
-    fontSize: 11,
-    fontWeight: "bold",
-    color: "#ffbc00bd",
-    lineHeight: 20
   }
 });

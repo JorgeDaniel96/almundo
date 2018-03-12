@@ -11,6 +11,7 @@ const iconInfo = require("~/assets/images/iconInfo.png");
 
 class Favorites extends PureComponent {
   showDetailInModal(hotel) {
+    this.hotel = hotel;
     App.navigateTo({
       routeName: "Modal",
       props: {

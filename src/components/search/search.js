@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { View, TextInput, Image, TouchableOpacity } from "react-native";
+import { View, TextInput, Image } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 

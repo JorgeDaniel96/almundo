@@ -8,10 +8,14 @@ export default StyleSheet.create({
     height: Device.height,
     paddingBottom: "25%",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    zIndex: 10,
+    elevation: 10
   },
   emptyFavoritesImage: {
-    marginBottom: 20
+    marginBottom: 20,
+    zIndex: 10,
+    elevation: 10
   },
   favoriteCardContainer: {
     marginBottom: 5
@@ -49,6 +53,11 @@ export default StyleSheet.create({
   },
   flexRow: {
     flexDirection: "row"
+  },
+  scrollDescription: {
+    width: "100%",
+    minHeight: 200,
+    paddingBottom: "50%"
   },
   amenitiesContainer: {
     width: "100%",

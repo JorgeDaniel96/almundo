@@ -21,6 +21,9 @@
 
 ## Run react native proyect
 
+* Mongodb must be installed to run the server
+* In api/config.json modify the ip according your machine
+
 * Should run:
   * `yarn install`
   * `yarn start`

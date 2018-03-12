@@ -55,9 +55,6 @@ class MapDetail extends Component {
         >
           <Text style={styles.nameItem}>{this.props.hotelInfo.name}</Text>
           <Text style={styles.addressItem}>{this.props.hotelInfo.address}</Text>
-          <Text style={styles.hourItem}>
-            Open until {this.props.hotelInfo.hour}
-          </Text>
         </Animated.View>
       </View>
     );
