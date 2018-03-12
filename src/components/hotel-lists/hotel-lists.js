@@ -68,8 +68,7 @@ class HotelLists extends PureComponent {
   }
 
   render() {
-    const dataIsReady = this.props.hotels.length >= 1;
-    console.log("dataIsReady: ", dataIsReady);
+    const dataIsReady = this.props.hotels.length > 0;
     return (
       <View>
         {dataIsReady ? (
