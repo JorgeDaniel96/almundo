@@ -1,4 +1,4 @@
-# Test comparamejor with react native
+# Test almundo with react native
 
 ## Folders
 
